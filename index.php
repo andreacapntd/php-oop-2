@@ -32,21 +32,17 @@
 
  class Cube extends Square {
 
-   public function __construct($side) {
 
-     parent::__construct($side);
-
-   }
 
    public function getSurface() {
 
-     return parent::getArea() * 6;
+     return $this -> getArea() * 6;
 
    }
 
    public function getVolume() {
 
-     return parent::getArea() *  $this -> side;
+     return $this -> getArea() *  $this -> side;
 
    }
 
